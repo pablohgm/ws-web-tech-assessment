@@ -23,7 +23,7 @@ export const validationSchema = Yup.object({
         .required('Annual Interest Rate is required'),
     amortizationPeriod: Yup.number()
         .integer('Amortization Period must be an integer')
-        .min(4, 'Amortization Period must be between 5 and 30')
+        .min(5, 'Amortization Period must be between 5 and 30')
         .max(30, 'Amortization Period must be between 5 and 30')
         .required('Amortization Period is required'),
     paymentSchedule: Yup.string().required('Payment Schedule is required'),
